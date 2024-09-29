@@ -3,7 +3,7 @@
     "VERILOG_FILES": "dir::src/*.v",
     "CLOCK_PORT": "clk",
     "CLOCK_PERIOD": 10.0,
-    "DESIGN_IS_CORE": false,
+    "FP_PDN_MULTLAYER": false,
     "FP_PDN_CORE_RING": false,
     "RT_MAX_LAYER": "met4"
 }
