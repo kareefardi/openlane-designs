@@ -37,7 +37,7 @@ wire [DEPTH_LOG2-1:0] write_addr = !rst_n  ? 0 : rd_addr;
 wire [WIDTH-1:0]         write_data = !rst_n  ? 0 : rd_wdata;
 
 
-mem_1r1w #(.DEPTH_LOG2(DEPTH_LOG2), .WIDTH(WIDTH)) lane0(
+mem_1r1w lane0(
     .clk(clk),
 
     .read_addr(rs1_addr),
@@ -51,7 +51,7 @@ mem_1r1w #(.DEPTH_LOG2(DEPTH_LOG2), .WIDTH(WIDTH)) lane0(
 
 
 
-mem_1r1w #(.DEPTH_LOG2(DEPTH_LOG2), .WIDTH(WIDTH)) lane1(
+mem_1r1w lane1(
     .clk(clk),
 
     .read_addr(rs2_addr),

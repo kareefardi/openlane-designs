@@ -1,3 +1,4 @@
+/// sta-blackbox
 (*blackbox*)
 
 module mem_1r1w (clk, read_addr, read, read_data, write_addr, write, write_data);
